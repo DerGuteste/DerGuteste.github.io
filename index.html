@@ -10,13 +10,39 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            background-color: #202020;
         }
-        h1, h2 {
-            color: #333;
+        h1, h2, h3 {
+            color: #ffffff;
+            font-weight: bolder;
+        }
+        p {
+            color:#c9c9c9;
+        }
+        
+        .Button {
+            margin: 40px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #00ffe5;
+            text-decoration: none;
+            border: 2px solid #00f7ff;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            text-shadow: rgb(0, 0, 0) 1px 0 10px;
+        }
+
+        .Button:hover {
+            background-color: #00ffe5;
+            color: #000;
         }
         .asset-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 20px;
         }
         .asset-card {
@@ -29,54 +55,82 @@
             max-width: 100%;
             height: auto;
         }
+
+        .show-off{
+            background-color: #171717;
+            border: 5px solid #ffffff; /* Add a 2px solid black border */
+            border-radius: 20px; /* Round the corners with a 15px radius [[2]] */
+            padding: 20px; /* Add some padding inside the div */
+            text-align: center; /* Center the text content [[6]] */
+            width: 300px; /* Set a width for the div (adjust as needed) */
+            height: 200px; /* Set a height for the div (adjust as needed) */
+        }
+
+        .asset-name{
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 30px;
+            background-color: black;
+            
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .asset-name:hover{
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            background-color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .asset-image {
+            padding-bottom: 20px;
+            border-radius: 5px 5px;
+        }
+
+        .profile-picture {
+            width: 170px; /* Set the width of the image */
+            height: 170px; /* Set the height of the image */
+            border-radius: 50%; /* Make the image circular */
+            object-fit: cover; /* Ensure the image covers the entire space */
+            border: 3px solid #ffffff; /* Add a white border around the image */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            margin-left: 40px;
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
     </style>
 </head>
 <body>
-    <h1>My Unity Assets</h1>
+    <h1>Der Guteste</h1>
 
-    <h2>Purchased Assets</h2>
-    <div class="asset-grid">
-        <div class="asset-card">
-            <img src="path/to/asset1-image.jpg" alt="Asset 1">
-            <h3>Asset 1 Name</h3>
-            <p>Brief description of Asset 1</p>
-        </div>
-        <div class="asset-card">
-            <img src="path/to/asset2-image.jpg" alt="Asset 2">
-            <h3>Asset 2 Name</h3>
-            <p>Brief description of Asset 2</p>
-        </div>
-        <!-- Add more asset cards as needed -->
+    <p>Hi, I am Der Guteste. Here you can see some of my work.</p>
+
+    <div class="show-off">
+        <p>Once I have created a website with a fully functioning Chat Bot build by me:</p>
+        <a href="alpha-intelligence.ai" class="Button">Alpha Intelligence</a>
     </div>
 
-    <h2>Downloaded Assets</h2>
+    <h1>Cevorbarg</h1>
+    <img src="images\cevorbarg.webp" class="profile-picture">
+    <p>You can find me under this name on the Unity asset store.</p>
+    <h2>My Work</h2>
     <div class="asset-grid">
         <div class="asset-card">
-            <img src="path/to/asset3-image.jpg" alt="Asset 3">
-            <h3>Asset 3 Name</h3>
-            <p>Brief description of Asset 3</p>
+            <img href="" src="images\StickOfJoy.png" alt="Stick Of Joy" class="asset-image">
+            <a href="link to asset" class="asset-name">Stick Of Joy</a>
+            <p>A joystick for Mobile games. You can put as many joysticks as you need onto the screen.</p>
         </div>
-        <div class="asset-card">
-            <img src="path/to/asset4-image.jpg" alt="Asset 4">
-            <h3>Asset 4 Name</h3>
-            <p>Brief description of Asset 4</p>
-        </div>
-        <!-- Add more asset cards as needed -->
-    </div>
-
-    <h2>Custom Assets</h2>
-    <div class="asset-grid">
-        <div class="asset-card">
-            <img src="path/to/asset5-image.jpg" alt="Asset 5">
-            <h3>Asset 5 Name</h3>
-            <p>Brief description of Asset 5</p>
-        </div>
-        <div class="asset-card">
-            <img src="path/to/asset6-image.jpg" alt="Asset 6">
-            <h3>Asset 6 Name</h3>
-            <p>Brief description of Asset 6</p>
-        </div>
-        <!-- Add more asset cards as needed -->
     </div>
 </body>
 </html>
